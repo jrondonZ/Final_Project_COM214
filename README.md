@@ -10,10 +10,7 @@ TEAM MEMBERS:
 A basic and interactive TODO application built with Ruby on Rails. Users can
 create accounts, manage personal ToDo items, and organize them by Categories.
 Each ToDo item belongs to a single Category, and each Category can have many
-ToDo items. The application features secure user authentication, full CRUD
-operations for both resources, and a polished Bootstrap UI.
-
-DEVELOPMENT PROCESS:
+ToDo items.
 
 1. Agile/Scrum
 2. Tasks divided by Objects & Depedency
