@@ -4,7 +4,7 @@ TODO APPLICATION - COM214 FINAL PROJECT
 TEAM MEMBERS:
 -------------
 - Josiah Z. Rondon 
-- Tanner 
+- Tanner Goodwin
 - Rebbeca Manna 
 
 A basic and interactive TODO application built with Ruby on Rails. Users can
