@@ -38,8 +38,8 @@ SETUP & INSTALLATION INSTRUCTIONS:
 
 
 1. CLONE THE REPOSITORY:
-   git clone [repo HTTP]
-   cd [project-folder-name]
+   - git clone [https://github.com/jrondonZ/Final_Project_COM214.git]
+   - cd [Final_Project_COM214]
 
 2. INSTALL DEPENDENCIES:
    bundle install
