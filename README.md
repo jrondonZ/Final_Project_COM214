@@ -12,7 +12,7 @@ create accounts, manage personal ToDo items, and organize them by Categories.
 Each ToDo item belongs to a single Category, and each Category can have many
 ToDo items.
 
-1. Agile/Scrum
+1. Agile/Scrum(Josiah)
 2. Tasks divided by Objects & Depedency
 3. Challenges
 
