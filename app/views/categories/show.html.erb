@@ -1,7 +1,31 @@
-<h1><%= @category.name %></h1>
+<div class="container mt-4">
+  <div class="card shadow-sm">
+    <div class="card-header bg-primary text-white">
+      <h1 class="mb-0"><%= @category.name %></h1>
+    </div>
 
-<p><%= @category.description %></p>
+    <div class="card-body">
+      <h5 class="card-title">Description</h5>
 
-<%= link_to "Edit", edit_category_path(@category) %> |
-<%= link_to "Delete", delete_category_path(@category) %> |
-<%= link_to "Back to Categories", categories_path %>
+      <% if @category.description.present? %>
+        <p class="card-text"><%= @category.description %></p>
+      <% else %>
+        <p class="text-muted">No description provided.</p>
+      <% end %>
+
+      <hr>
+
+      <h5>ToDos in this Category</h5>
+
+      <p class="text-muted">
+        ToDos will appear here once the ToDo model is connected.
+      </p>
+    </div>
+
+    <div class="card-footer d-flex gap-2">
+      <%= link_to "Edit", edit_category_path(@category), class: "btn btn-outline-secondary" %>
+      <%= link_to "Delete", delete_category_path(@category), class: "btn btn-outline-danger" %>
+      <%= link_to "Back to Categories", categories_path, class: "btn btn-outline-primary" %>
+    </div>
+  </div>
+</div>
