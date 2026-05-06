@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+  root "categories#index"
+
+  get "/categories", to: "categories#index", as: "categories"
+  get "/categories/new", to: "categories#new", as: "new_category"
+  post "/categories", to: "categories#create"
+  get "/categories/:id", to: "categories#show", as: "category"
+  get "/categories/:id/edit", to: "categories#edit", as: "edit_category"
+  patch "/categories/:id", to: "categories#update"
+  get "/categories/:id/delete", to: "categories#delete", as: "delete_category"
+  delete "/categories/:id", to: "categories#destroy"
+  
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

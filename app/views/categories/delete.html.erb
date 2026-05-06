@@ -1,0 +1,10 @@
+<h1>Delete Category</h1>
+
+<p>Are you sure you want to delete this category?</p>
+
+<h2><%= @category.name %></h2>
+<p><%= @category.description %></p>
+
+<%= button_to "Yes, delete this category", category_path(@category), method: :delete %>
+
+<%= link_to "Cancel", category_path(@category) %>
