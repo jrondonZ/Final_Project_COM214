@@ -17,7 +17,7 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 gem "sprockets-rails"
-
+gem "sassc-rails"
 gem "bootstrap", "~> 5.3.3"
 gem "dartsass-rails"
 gem "jquery-rails"
