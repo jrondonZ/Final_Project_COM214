@@ -1,0 +1,61 @@
+<% content_for :title, @todo.title %>
+
+<div class="row">
+  <div class="col-md-8">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <div class="mb-4">
+          <h1 class="card-title">
+            <% if @todo.completed %>
+              <i class="fas fa-check-circle text-success"></i>
+            <% elsif @todo.priority %>
+              <i class="fas fa-exclamation-circle text-danger"></i>
+            <% end %>
+            <%= @todo.title %>
+          </h1>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <h6 class="text-muted mb-2">Category</h6>
+            <p>
+              <% if @todo.category %>
+                <%= link_to @todo.category.name, category_path(@todo.category), class: "btn btn-sm btn-outline-secondary" %>
+              <% else %>
+                <span class="text-danger">Uncategorized</span>
+              <% end %>
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h6 class="text-muted mb-2">Status</h6>
+            <div>
+              <% if @todo.priority %>
+                <span class="badge bg-danger"><i class="fas fa-star"></i> High Priority</span>
+              <% end %>
+              <% if @todo.completed %>
+                <span class="badge bg-success"><i class="fas fa-check"></i> Completed</span>
+              <% else %>
+                <span class="badge bg-warning"><i class="fas fa-clock"></i> Pending</span>
+              <% end %>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="d-flex gap-2">
+          <%= link_to edit_todo_path(@todo), class: "btn btn-primary" do %>
+            <i class="fas fa-edit"></i> Edit
+          <% end %>
+          <%= link_to todos_path, class: "btn btn-outline-secondary" do %>
+            <i class="fas fa-arrow-left"></i> Back to Todos
+          <% end %>
+          <%= button_to @todo, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" do %>
+            <i class="fas fa-trash"></i> Delete
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
