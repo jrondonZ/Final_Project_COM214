@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "categories#index"
+  root "welcome#index"
 
   get "/categories", to: "categories#index", as: "categories"
   get "/categories/new", to: "categories#new", as: "new_category"
