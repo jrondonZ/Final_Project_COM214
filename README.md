@@ -20,7 +20,7 @@ We followed an Agile approach with daily standups. Initial setup and model
 creation was done collaboratively. Then, we split into:
 - Josiah : User authentication & authorization
 - Rebecca : Categories CRUD & views
-- Person C: ToDos CRUD & views
+- Tanner: ToDos CRUD & views
 
 We resolved merge conflicts through pull requests and code reviews.
 
