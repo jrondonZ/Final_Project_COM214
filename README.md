@@ -5,7 +5,7 @@ TEAM MEMBERS:
 -------------
 - Josiah Z. Rondon 
 - Tanner Goodwin
-- Rebbeca Manna 
+- Rebecca Manna 
 
 A basic and interactive TODO application built with Ruby on Rails. Users can
 create accounts, manage personal ToDo items, and organize them by Categories.
