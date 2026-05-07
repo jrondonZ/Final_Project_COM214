@@ -1,51 +1,24 @@
-TODO APPLICATION - COM214 FINAL PROJECT 
+# README
 
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-TEAM MEMBERS:
--------------
-- Josiah Z. Rondon 
-- Tanner Goodwin
-- Rebecca Manna 
+Things you may want to cover:
 
-A basic and interactive TODO application built with Ruby on Rails. Users can
-create accounts, manage personal ToDo items, and organize them by Categories.
-Each ToDo item belongs to a single Category, and each Category can have many
-ToDo items.
+* Ruby version
 
-1. Agile/Scrum(Josiah)
-2. Tasks divided by Objects & Depedency
-3. Challenges
+* System dependencies
 
-We followed an Agile approach with daily standups. Initial setup and model
-creation was done collaboratively. Then, we split into:
-- Josiah : User authentication & authorization
-- Rebecca : Categories CRUD & views
-- Tanner: ToDos CRUD & views
+* Configuration
 
-We resolved merge conflicts through pull requests and code reviews.
+* Database creation
 
+* Database initialization
 
-- Ruby version: 3.4.9
-- Rails version: 
-- Frontend: Bootstrap 5.x, Font Awesome
-- Additional Gems:
-  - 
+* How to run the test suite
 
-SETUP & INSTALLATION INSTRUCTIONS:
+* Services (job queues, cache servers, search engines, etc.)
 
+* Deployment instructions
 
-1. CLONE THE REPOSITORY:
-   - git clone [https://github.com/jrondonZ/Final_Project_COM214.git]
-   - cd [Final_Project_COM214]
-
-2. INSTALL DEPENDENCIES:
-   bundle install
-
-
-HOW TO RUN & TEST:
-
-
-RUN THE APPLICATION:
-- Start the server: rails server
-
-TEST USER ACCOUNTS 
+* ...

@@ -1,0 +1,23 @@
+<div class="container mt-4">
+  <div class="card shadow-sm border-danger">
+
+    <div class="card-header bg-danger text-white">
+      <h2 class="mb-0">Delete Category</h2>
+    </div>
+
+    <div class="card-body">
+      <p class="lead">
+        Are you sure you want to delete this category?
+      </p>
+
+      <h4 class="text-danger"><%= @category.name %></h4>
+      <p class="text-muted"><%= @category.description %></p>
+    </div>
+
+    <div class="card-footer d-flex gap-2">
+      <%= button_to "Yes, delete this category", category_path(@category), method: :delete, class: "btn btn-danger" %>
+      <%= link_to "Cancel", category_path(@category), class: "btn btn-outline-secondary" %>
+    </div>
+
+  </div>
+</div>
