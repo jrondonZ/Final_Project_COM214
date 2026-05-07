@@ -19,7 +19,7 @@ ToDo items.
 We followed an Agile approach with daily standups. Initial setup and model
 creation was done collaboratively. Then, we split into:
 - Josiah : User authentication & authorization
-- Person B: Categories CRUD & views
+- Rebecca : Categories CRUD & views
 - Person C: ToDos CRUD & views
 
 We resolved merge conflicts through pull requests and code reviews.
