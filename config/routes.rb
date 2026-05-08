@@ -36,7 +36,7 @@ Rails.application.routes.draw do
   resources :categories
   resources :todos do
     collection do
-      get :complete   # /todos/complete
+      get :completed   # /todos/complete
     end
   end
 end

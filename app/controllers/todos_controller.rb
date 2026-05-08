@@ -41,7 +41,7 @@ class TodosController < ApplicationController
     redirect_to todos_path
   end
 
-  def complete
+  def completed
     @todos = current_user.todos.where(completed: true)
   end
 
