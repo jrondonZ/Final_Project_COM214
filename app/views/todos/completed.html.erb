@@ -4,13 +4,26 @@
   <% @todos.each do |todo| %>
     <div class="todo-item mb-3 p-3 border rounded bg-light">
       <h3><%= todo.title %></h3>
+
       <p>Priority: <%= todo.priority ? "Yes" : "No" %></p>
-      <p>Status: <span class="text-success">Completed</span></p>
+
+      <p>Status:
+        <span class="text-success">Completed</span>
+      </p>
+
       <p>Category: <%= todo.category&.name || "None" %></p>
-      
-      <%= link_to "View", todo_path(todo), class: "btn btn-sm btn-info" %>
-      <%= link_to "Edit", edit_todo_path(todo), class: "btn btn-sm btn-warning" %>
-      <%= link_to "Delete", todo_path(todo), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-sm btn-danger" %>
+
+      <div class="d-flex gap-2">
+        <%= link_to "View", todo_path(todo), class: "btn btn-sm btn-info" %>
+
+        <%= link_to "Edit", edit_todo_path(todo), class: "btn btn-sm btn-warning" %>
+
+        <%= button_to "Delete",
+            todo_path(todo),
+            method: :delete,
+            class: "btn btn-sm btn-danger",
+            form: { data: { turbo_confirm: "Are you sure you want to delete this ToDo?" } } %>
+      </div>
     </div>
   <% end %>
 <% else %>
