@@ -11,6 +11,8 @@ services:
     envVars:
       - key: RAILS_ENV
         value: production
+      - key: SECRET_KEY_BASE
+        value: 4c831a1617a4980345d5451afb5771da02ed06cf35be223a2b84588ac6970bbd56c6c8a11169409bd1ab1ab1e9328594f5be7fb5135505bf5a7711dae8b56949
       - key: DATABASE_URL
         fromDatabase:
           name: todo-db
