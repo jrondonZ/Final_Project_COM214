@@ -1,0 +1,18 @@
+<h1>Completed ToDos</h1>
+
+<% if @todos.present? %>
+  <% @todos.each do |todo| %>
+    <div class="todo-item mb-3 p-3 border rounded bg-light">
+      <h3><%= todo.title %></h3>
+      <p>Priority: <%= todo.priority ? "Yes" : "No" %></p>
+      <p>Status: <span class="text-success">Completed</span></p>
+      <p>Category: <%= todo.category&.name || "None" %></p>
+      
+      <%= link_to "View", todo_path(todo), class: "btn btn-sm btn-info" %>
+      <%= link_to "Edit", edit_todo_path(todo), class: "btn btn-sm btn-warning" %>
+      <%= link_to "Delete", todo_path(todo), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-sm btn-danger" %>
+    </div>
+  <% end %>
+<% else %>
+  <p>No completed todos yet.</p>
+<% end %>
