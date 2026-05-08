@@ -1,8 +1,10 @@
-<% @todos.each do |todo| %>
+<% @todo.each do |todo| %>
   <div class="todo-item">
     <h3><%= todo.title %></h3>
     <p><%= todo.description %></p>
     <p>Status: <%= todo.completed ? "Completed" : "Pending" %></p>
+
   </div>
+  
 
 <% end %>
