@@ -41,22 +41,3 @@ rails server
 http://127.0.0.1:3000
 
 Start the server: rails server
-
-
-Current discrepancies: 
-  
-"ActionView::Template::Error (undefined method &#39;each&#39; for nil)
-Caused by: NoMethodError (undefined method &#39;each&#39; for nil)
-
-Information for: ActionView::Template::Error (undefined method &#39;each&#39; for nil):
-    1: &lt;% @todo.each do |todo| %&gt;
-    2:   &lt;div class=&quot;todo-item&quot;&gt;
-    3:     &lt;h3&gt;&lt;%= todo.title %&gt;&lt;/h3&gt;
-    4:     &lt;p&gt;&lt;%= todo.description %&gt;&lt;/p&gt;
-    5:     &lt;p&gt;Status: &lt;%= todo.completed ? &quot;Completed&quot; : &quot;Pending&quot; %&gt;&lt;/p&gt;
-  
-app/views/todos/index.html.erb:2
-
-Information for cause: NoMethodError (undefined method &#39;each&#39; for nil):
-  
-app/views/todos/index.html.erb:2"
