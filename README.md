@@ -1,5 +1,8 @@
 TODO APPLICATION - COM214 FINAL PROJECT
 
+Deployed App : https://todo-app-cz28.onrender.com
+Github repo: https://github.com/jrondonZ/Final_Project_COM214.git
+
 TEAM MEMBERS:
 Josiah Z. Rondon
 Tanner Goodwin
@@ -12,8 +15,8 @@ Challenges
 We followed an Agile approach with daily standups. Initial setup and model creation was done collaboratively. Then, we split into:
 
 Josiah : User authentication & authorization
-Rebecca : Categories CRUD & views
-Person C: ToDos CRUD & views
+Rebecca : Categories  & views
+Person C: ToDos & views
 We resolved merge conflicts through pull requests and code reviews.
 
 Ruby version: 3.4.9
