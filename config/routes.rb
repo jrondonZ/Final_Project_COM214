@@ -17,9 +17,29 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)
-  # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
-  # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
+  get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
+  get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # Authentication
+  get  "signup",  to: "users#new"
+  post "signup",  to: "users#create"
+  get  "login",   to: "sessions#new"
+  post "login",   to: "sessions#create"
+  delete "logout", to: "sessions#destroy"
+
+  resources :users, only: [:new, :create, :destroy]
+
+  # Categories and ToDos – to be built by Persons B and C
+  # We define them here so the navbar links work from day one
+  resources :categories
+  resources :todos do
+    collection do
+      get :complete   # /todos/complete
+    end
+  end
+end
+
 end
