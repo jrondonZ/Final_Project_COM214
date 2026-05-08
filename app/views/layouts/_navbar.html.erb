@@ -27,7 +27,7 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end">
               <li>
-                <%= link_to "Delete Account", user_path(current_user),
+                <%= button_to "Delete Account", user_path(current_user),
                     method: :delete,
                     data: { confirm: "This will permanently delete your account and all your data. Are you sure?" },
                     class: "dropdown-item text-danger" %>
