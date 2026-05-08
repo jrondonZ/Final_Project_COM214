@@ -9,8 +9,6 @@ services:
       bundle exec rails db:migrate
     startCommand: bundle exec rails server
     envVars:
-      - key: RAILS_MASTER_KEY
-        sync: false
       - key: RAILS_ENV
         value: production
       - key: DATABASE_URL
