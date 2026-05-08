@@ -2,9 +2,9 @@ class TodosController < ApplicationController
   before_action :require_login
 
   def index
-    @todos = current_user.todos
+  @todos = current_user.todos
   end
-
+  
   def new
     @todo = current_user.todos.new
   end
