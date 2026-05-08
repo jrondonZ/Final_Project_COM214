@@ -42,7 +42,7 @@ class TodosController < ApplicationController
   end
 
   def complete
-    @todos = current_user.todo.where(completed: true)
+    @todos = current_user.todos.where(completed: true)
   end
 
   private
