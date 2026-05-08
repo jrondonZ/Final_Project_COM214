@@ -28,12 +28,11 @@ Rails.application.routes.draw do
   post "signup",  to: "users#create"
   get  "login",   to: "sessions#new"
   post "login",   to: "sessions#create"
-  delete "logout", to: "sessions#destroy"
+  get "logout", to: "sessions#destroy"
 
   resources :users, only: [:new, :create, :destroy]
 
-  # Categories and ToDos – to be built by Persons B and C
-  # We define them here so the navbar links work from day one
+  
   resources :categories
   resources :todos do
     collection do
